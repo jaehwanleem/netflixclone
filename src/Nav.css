@@ -1,0 +1,33 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  height: 30px;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+
+  /* fading out animation */
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav__logo {
+  /* width 만 설정해주고 object fit 으로 나머지 비율은 자동으로 맞춰준다 */
+  width: 80px;
+  left: 20px;
+
+  object-fit: contain;
+}
+
+.nav__avatar {
+  position: fixed;
+  right: 20px;
+  height: 30px;
+  object-fit: contain;
+}
+.nav__black {
+  background-color: black;
+}
